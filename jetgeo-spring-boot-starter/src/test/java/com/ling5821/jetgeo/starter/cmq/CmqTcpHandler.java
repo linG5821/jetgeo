@@ -96,7 +96,7 @@ public class CmqTcpHandler {
     }
 
     public void start() {
-        String queueName = "gps-temp";
+        String queueName = "gps-test";
         this.consumer.subscribe(queueName, (queue, list) -> handleGatewayMessage(list));
     }
 }
