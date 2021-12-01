@@ -1,0 +1,43 @@
+# This workflow will build a Java project with Maven
+# For more information see: https://help.github.com/actions/language-and-framework-guides/building-and-testing-java-with-maven
+
+name: mtime
+
+on:
+  push:
+    tags:
+      - "*"
+    branches:
+      - "*"
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      # 缓存放在 actions/setup-java@v2 之后会导致缓存内容覆盖已经生成好的settings.xml
+      - name: Cache Maven packages
+        uses: actions/cache@v2
+        with:
+          path: ~/.m2
+          key: ${{ runner.os }}-m2-${{ hashFiles('**/pom.xml') }}
+          restore-keys: ${{ runner.os }}-m2
+      - name: Set up JDK 1.8
+        uses: actions/setup-java@v2
+        with:
+          # v2版本必须制定分发类型
+          distribution: adopt
+          java-version: 8
+          overwrite-settings: true
+          server-id: ossrh
+          server-username: MAVEN_USERNAME
+          server-password: MAVEN_PASSWORD
+          gpg-private-key: ${{ secrets.MAVEN_GPG_PRIVATE_KEY }}
+          gpg-passphrase: MAVEN_GPG_PASSPHRASE
+      - run: mvn -B deploy
+        env:
+          MAVEN_USERNAME: ${{ secrets.MAVEN_CENTER_USER_NAME }}
+          MAVEN_PASSWORD: ${{ secrets.MAVEN_CENTER_PASSWORD }}
+          MAVEN_GPG_PASSPHRASE: ${{ secrets.MAVEN_GPG_PASSPHRASE }}
