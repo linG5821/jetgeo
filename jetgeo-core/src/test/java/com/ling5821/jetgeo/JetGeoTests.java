@@ -23,7 +23,7 @@ public class JetGeoTests {
     public static final JetGeo jetGeo;
     static {
         JetGeoProperties properties = new JetGeoProperties();
-        properties.setGeoDataParentPath("D:\\Projects\\idea\\jetgeo\\jetgeo-core\\src\\main\\resources");
+        properties.setGeoDataParentPath("/data/geodata");
         properties.setLevel(LevelEnum.province);
         properties.setLevel(LevelEnum.city);
         properties.setLevel(LevelEnum.district);
