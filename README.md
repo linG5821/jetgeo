@@ -24,7 +24,6 @@ A library for off-line inverse geocoding that supports location up to district l
 
 
 - [快速开始](#快速开始)
-- [文件目录说明](#文件目录说明)
 - [使用到的框架](#使用到的框架)
 - [贡献者](#贡献者)
     - [如何参与开源项目](#如何参与开源项目)
@@ -47,14 +46,18 @@ A library for off-line inverse geocoding that supports location up to district l
 
 3. 解压数据到你的目录 例如 `/data/geodata`
 
+
    > 注意: 解压后目录结构
    >
    > geodata
+   > 
    > ├── province
+   > 
    > ├── city
+   > 
    > ├── district
 
-4. 一个例子
+5. 一个例子
 
    ```java
    public class JetGeoExample {
