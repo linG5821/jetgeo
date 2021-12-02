@@ -9,7 +9,7 @@ A library for off-line inverse geocoding that supports location up to district l
 
 ![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/linG5821/jetgeo?sort=semver)
 
-![GitHub Repo stars](https://img.shields.io/github/stars/linG5821/jetgeo?style=social)
+![GitHub Repo stars](https://img.shields.io/github/stars/linG5821/jetgeo)
 
 ![GitHub](https://img.shields.io/github/license/linG5821/jetgeo)
 
