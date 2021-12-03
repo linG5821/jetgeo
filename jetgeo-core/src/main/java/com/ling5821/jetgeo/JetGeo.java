@@ -64,7 +64,8 @@ public class JetGeo {
 
     private void initLoadingCache() {
         if (this.level.lessThen(LevelEnum.city)) {
-            CITY_REGION_CACHE = this.loadCacheBuilder.build(new RegionCacheLoader(this.geoDataParentFile, LevelEnum.city));
+            CITY_REGION_CACHE = this.loadCacheBuilder.build(
+                new RegionCacheLoader(this.geoDataParentFile, LevelEnum.city));
         }
 
         if (this.level.lessThen(LevelEnum.district)) {

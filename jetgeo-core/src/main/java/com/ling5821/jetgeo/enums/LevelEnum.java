@@ -25,6 +25,7 @@ public enum LevelEnum {
      */
 //    street
     ;
+
     public boolean lessThen(LevelEnum levelEnum) {
         return this.ordinal() >= levelEnum.ordinal();
     }

@@ -5,6 +5,7 @@ package com.ling5821.jetgeo.model;
  * @date 2021/11/18 16:38
  */
 public class JsonPoint {
+
     private double lng;
     private double lat;
 

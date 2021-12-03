@@ -1,14 +1,13 @@
 package com.ling5821.jetgeo.utils;
 
-import com.google.common.geometry.S2Region;
-import com.ling5821.jetgeo.enums.LevelEnum;
-
 import cn.hutool.core.io.FileUtil;
 import cn.hutool.core.lang.TypeReference;
 import cn.hutool.json.JSONUtil;
+import com.google.common.geometry.S2Region;
+import com.ling5821.jetgeo.enums.LevelEnum;
+import com.ling5821.jetgeo.model.JsonPoint;
 import com.ling5821.jetgeo.model.RegionCache;
 import com.ling5821.jetgeo.model.RegionInfo;
-import com.ling5821.jetgeo.model.JsonPoint;
 import com.ling5821.jetgeo.model.Tuple2;
 import java.io.File;
 import java.lang.reflect.Type;

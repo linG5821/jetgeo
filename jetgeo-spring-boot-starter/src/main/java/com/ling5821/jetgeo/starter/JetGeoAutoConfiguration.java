@@ -13,6 +13,7 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 @EnableConfigurationProperties(JetGeoProperties.class)
 public class JetGeoAutoConfiguration {
+
     @Bean
     @ConditionalOnMissingBean
     public JetGeo jetGeo(JetGeoProperties properties) {

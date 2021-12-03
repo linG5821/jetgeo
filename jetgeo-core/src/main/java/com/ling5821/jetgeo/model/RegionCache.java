@@ -16,6 +16,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class RegionCache {
+
     private String regionName;
     private String parentCode;
     private String regionCode;
@@ -23,10 +24,11 @@ public class RegionCache {
     private List<S2Region> s2RegionList;
 
     public String getCacheKey() {
-        return parentCode != null && parentCode.length() > 0 ? parentCode + ":" + regionCode : regionCode;
+        return parentCode != null && parentCode.length() > 0 ? parentCode + ":" + regionCode
+            : regionCode;
     }
 
-    public boolean contains(double lat,double lng) {
+    public boolean contains(double lat, double lng) {
         for (S2Region s2Region : this.s2RegionList) {
             if (S2Util.contains(s2Region, lat, lng)) {
                 return true;
@@ -34,7 +36,6 @@ public class RegionCache {
         }
         return false;
     }
-
 
 
 }

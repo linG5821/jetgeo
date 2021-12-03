@@ -48,8 +48,7 @@ public class JetGeoProperties {
     private Duration loadCacheExpireAfterAccess = Duration.of(5, ChronoUnit.MINUTES);
 
     /**
-     * 在指定的过期时间之后访问时，刷新缓存数据，在刷新任务未完成之前，其他线程返回旧值
-     * 建议与 loadCacheRefreshAfterWrite 设置为 1:5 / 1:3 的关系
+     * 在指定的过期时间之后访问时，刷新缓存数据，在刷新任务未完成之前，其他线程返回旧值 建议与 loadCacheRefreshAfterWrite 设置为 1:5 / 1:3 的关系
      */
     private Duration loadCacheRefreshAfterWrite = Duration.of(1, ChronoUnit.MINUTES);
 }

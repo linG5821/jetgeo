@@ -8,6 +8,7 @@ import lombok.Data;
  */
 @Data
 public class GpsInfo {
+
     private String deviceId;
     private Double longitude;
     private Double latitude;
