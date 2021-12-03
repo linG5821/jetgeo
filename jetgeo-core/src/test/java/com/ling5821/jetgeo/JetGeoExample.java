@@ -1,19 +1,8 @@
 package com.ling5821.jetgeo;
 
-import cn.hutool.core.io.FileUtil;
-import cn.hutool.json.JSONArray;
-import cn.hutool.json.JSONObject;
-import cn.hutool.json.JSONUtil;
 import com.ling5821.jetgeo.config.JetGeoProperties;
 import com.ling5821.jetgeo.enums.LevelEnum;
 import com.ling5821.jetgeo.model.GeoInfo;
-import java.io.File;
-import java.nio.charset.StandardCharsets;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import org.apache.lucene.util.RamUsageEstimator;
-import org.junit.jupiter.api.Test;
 
 /**
  * @author lsj

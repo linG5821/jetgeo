@@ -4,15 +4,18 @@ import cn.hutool.core.io.FileUtil;
 import cn.hutool.json.JSONArray;
 import cn.hutool.json.JSONObject;
 import cn.hutool.json.JSONUtil;
+import com.google.common.geometry.S2CellId;
+import com.google.common.geometry.S2Region;
 import com.ling5821.jetgeo.config.JetGeoProperties;
 import com.ling5821.jetgeo.enums.LevelEnum;
 import com.ling5821.jetgeo.model.GeoInfo;
+import com.ling5821.jetgeo.model.RegionCache;
+import com.ling5821.jetgeo.utils.S2Util;
 import java.io.File;
 import java.nio.charset.StandardCharsets;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import org.apache.lucene.util.RamUsageEstimator;
 import org.junit.jupiter.api.Test;
 
 /**
@@ -75,9 +78,8 @@ public class JetGeoTests {
         System.out.println(geoInfo14);
     }
 
-    @Test
     void getCellIdTest() {
-        /*for (RegionCache regionCache : JetGeo.PROVINCE_REGION_CACHE.values()) {
+        for (RegionCache regionCache : JetGeo.PROVINCE_REGION_CACHE.values()) {
             List<S2Region> s2RegionList = regionCache.getS2RegionList();
             for (S2Region s2Region : s2RegionList) {
                 StringBuilder sb = new StringBuilder();
@@ -95,10 +97,7 @@ public class JetGeoTests {
                 System.out.println(regionCache.getRegionName() + "-----------------------------");
                 cellIdList = null;
             }
-        }*/
-        System.out.println(RamUsageEstimator.humanSizeOf(JetGeo.PROVINCE_REGION_CACHE));
-        System.out.println(RamUsageEstimator.humanSizeOf(jetGeo.CITY_REGION_CACHE));
-
+        }
     }
 
     void jsonDataParse() {
