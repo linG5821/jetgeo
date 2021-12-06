@@ -55,7 +55,8 @@ public class JetGeo {
      * @param cache
      */
     private void initCache(LevelEnum level, Map<String, RegionCache> cache) {
-        List<File> files = FileUtil.loopFiles(new File(this.geoDataParentFile, level.name()));
+        List<File> files = FileUtil.loopFiles(new File(this.geoDataParentFile, level.name()),
+            pathname -> pathname.getName().matches(".+\\.json"));
         for (File file : files) {
             RegionCache regionCache = Utils.loadRegionCache(file);
             cache.put(regionCache.getCacheKey(), regionCache);

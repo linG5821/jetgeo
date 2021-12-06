@@ -26,7 +26,7 @@ public class RegionCacheLoader extends CacheLoader<String, List<RegionCache>> {
     public List<RegionCache> load(String key) throws Exception {
         List<File> files = FileUtil.loopFiles(dataPath,
             pathname -> pathname.getName()
-                .matches(level + "_" + key + "_.+"));
+                .matches(level + "_" + key + "_.+\\.json"));
         return Utils.loadRegionCaches(files);
     }
 }
