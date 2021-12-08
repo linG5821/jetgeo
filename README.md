@@ -125,42 +125,55 @@ Apache License 2.0, see [LICENSE](https://github.com/linG5821/jetgeo/blob/master
 
 <table>
   <tbody>
-    <tr>
-        <td align="center" valign="top">
-            <img width="125" height="125" src="https://github.com/Tangchaoyue.png?s=150">
-            <br>
-            <strong>Tangchaoyue</strong>
-            <br>
-            <a href="https://github.com/Tangchaoyue">@Tangchaoyue</a>
-            <p>感谢 @Tangchaoyue(lfr) 的陪伴, 支持以及给项目起的名字,给我极大的信心与鼓励,并且在我编码的时候耐心的照顾我的生活</p>
-        </td>
-        <td align="center" valign="top">
-            <img width="125" height="125" src="https://github.com/halfrost.png?s=150">
-            <br>
-            <strong>halfrost</strong>
-            <br>
-            <a href="https://github.com/halfrost">@halfrost</a>
-            <p>感谢 @halfrost 大佬的文章</p>
-            <a href="https://github.com/halfrost/Halfrost-Field/blob/master/contents/Go/go_spatial_search.md">高效的多维空间点索引算法 — Geohash 和 Google S2</a>
-            <a href="https://github.com/halfrost/Halfrost-Field/blob/master/contents/Go/go_s2_regionCoverer.md">Google S2 是如何解决空间覆盖最优解问题的</a>
-        </td>
-        <td align="center" valign="top">
-            <img width="125" height="125" src="https://profile.csdnimg.cn/4/E/A/3_qq_43777978?s=150">
-            <br>
-            <strong>跳舞D猴子</strong>
-            <br>
-            <a href="https://blog.csdn.net/qq_43777978">@跳舞D猴子</a>
-            <p>感谢 @跳舞D猴子 的文章</p>
-            <a href="https://blog.csdn.net/qq_43777978/article/details/116800460?ivk_sa=1024320u">Google的S2算法原理以及使用Java版本</a>
-        </td>
-        <td align="center" valign="top">
-            <img width="125" height="125" src="https://github.com/lssaidong.png?s=150">
-            <br>
-            <strong>lss</strong>
-            <br>
-            <a href="https://github.com/lssaidong">@lssaidong</a>
-            <p>感谢 @lssaidong 贡献的项目 Logo</p>
-        </td>
-     </tr>
+  <tr>
+    <td align="center" valign="top">
+      <img width="125" height="125" src="https://github.com/Tangchaoyue.png?s=150">
+      <br>
+      <strong>Tangchaoyue</strong>
+      <br>
+      <a href="https://github.com/Tangchaoyue">@Tangchaoyue</a>
+      <p>感谢 @Tangchaoyue(lfr) 的陪伴, 支持以及给项目起的名字,给我极大的信心与鼓励,并且在我编码的时候耐心的照顾我的生活</p>
+    </td>
+    <td align="center" valign="top">
+      <img width="125" height="125" src="https://github.com/halfrost.png?s=150">
+      <br>
+      <strong>halfrost</strong>
+      <br>
+      <a href="https://github.com/halfrost">@halfrost</a>
+      <p>感谢 @halfrost 大佬的文章</p>
+      <a href="https://github.com/halfrost/Halfrost-Field/blob/master/contents/Go/go_spatial_search.md">高效的多维空间点索引算法
+        — Geohash 和 Google S2</a>
+      <a href="https://github.com/halfrost/Halfrost-Field/blob/master/contents/Go/go_s2_regionCoverer.md">Google
+        S2 是如何解决空间覆盖最优解问题的</a>
+    </td>
+    <td align="center" valign="top">
+      <img width="125" height="125" src="https://profile.csdnimg.cn/4/E/A/3_qq_43777978?s=150">
+      <br>
+      <strong>跳舞D猴子</strong>
+      <br>
+      <a href="https://blog.csdn.net/qq_43777978">@跳舞D猴子</a>
+      <p>感谢 @跳舞D猴子 的文章</p>
+      <a
+          href="https://blog.csdn.net/qq_43777978/article/details/116800460?ivk_sa=1024320u">Google的S2算法原理以及使用Java版本</a>
+    </td>
+    <td align="center" valign="top">
+      <img width="125" height="125" src="https://github.com/lssaidong.png?s=150">
+      <br>
+      <strong>lss</strong>
+      <br>
+      <a href="https://github.com/lssaidong">@lssaidong</a>
+      <p>感谢 @lssaidong 贡献的项目 Logo</p>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" valign="top">
+      <img width="125" height="125" src="https://github.com/renyiwei-xinyi.png?s=150">
+      <br>
+      <strong>renyiwei-xinyi</strong>
+      <br>
+      <a href="https://github.com/renyiwei-xinyi">@renyiwei-xinyi</a>
+      <p>感谢 @renyiwei-xinyi 的捐赠以及支持</p>
+    </td>
+  </tr>
   </tbody>
 </table>
