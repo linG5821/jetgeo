@@ -85,10 +85,6 @@ public class JetGeo {
      */
     public GeoInfo getGeoInfo(double lat, double lng) {
         GeoInfo geoInfo = new GeoInfo();
-        geoInfo.setProvince("");
-        geoInfo.setCity("");
-        geoInfo.setDistrict("");
-        geoInfo.setStreet("");
         geoInfo.setLevel(LevelEnum.province);
 
         //定位省
@@ -102,7 +98,7 @@ public class JetGeo {
             containsRegionByLoadingCache(geoInfo, CITY_REGION_CACHE, lat, lng);
         }
 
-        if (StrUtil.isNotEmpty(geoInfo.getCity()) && level.lessThen(LevelEnum.district)) {
+        if (StrUtil.isNotEmpty(geoInfo.getAdcode()) && level.lessThen(LevelEnum.district)) {
             containsRegionByLoadingCache(geoInfo, DISTRICT_REGION_CACHE, lat, lng);
         }
 
@@ -134,7 +130,7 @@ public class JetGeo {
         }
         geoInfo.setAdcode(regionCode);
         geoInfo.setLevel(regionLevel);
-        geoInfo.setRegionName(regionLevel, regionName);
+        geoInfo.setRegionName(regionLevel, regionName, regionCode);
     }
 
     private void containsRegionByLoadingCache(GeoInfo geoInfo,
@@ -154,9 +150,12 @@ public class JetGeo {
                         break;
                     }
                 }
-                geoInfo.setAdcode(regionCode);
-                geoInfo.setLevel(regionLevel);
-                geoInfo.setRegionName(regionLevel, regionName);
+                if (StrUtil.isNotEmpty(regionName) && StrUtil.isNotEmpty(regionCode)
+                    && regionLevel != null) {
+                    geoInfo.setAdcode(regionCode);
+                    geoInfo.setLevel(regionLevel);
+                    geoInfo.setRegionName(regionLevel, regionName, regionCode);
+                }
             } catch (ExecutionException e) {
                 throw new RuntimeException(e);
             }

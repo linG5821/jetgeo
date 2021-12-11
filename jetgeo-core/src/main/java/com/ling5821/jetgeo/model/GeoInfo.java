@@ -13,31 +13,42 @@ import lombok.NoArgsConstructor;
 public class GeoInfo {
 
     private String formatAddress;
-    private String province;
-    private String city;
-    private String district;
-    private String street;
+    private String province = "";
+    private String provinceCode = "";
+    private String city = "";
+    private String cityCode = "";
+    private String district = "";
+    private String districtCode = "";
+    private String street = "";
+    private String streetCode = "";
+
+    /**
+     * 最低一级的行政区代码
+     */
     private String adcode;
     private LevelEnum level;
 
     /* 获取当前具有的等级, 如果搜索下级未找到,能保证此时Level标识能找到的最低等级 */
     public void setLevel(LevelEnum level) {
-        if (this.level != null) {
+        if (level != null) {
             this.level = level;
         }
     }
 
-    public void setRegionName(LevelEnum level, String regionName) {
+    public void setRegionName(LevelEnum level, String regionName, String regionCode) {
         if (level != null) {
             switch (level) {
                 case province:
                     this.province = regionName;
+                    this.provinceCode = regionCode;
                     break;
                 case city:
                     this.city = regionName;
+                    this.cityCode = regionCode;
                     break;
                 case district:
                     this.district = regionName;
+                    this.districtCode = regionCode;
                     break;
                 default:
                     break;
