@@ -25,10 +25,10 @@
         <project.build.sourceEncoding>${project.encoding}</project.build.sourceEncoding>
         <project.reporting.outputEncoding>${project.encoding}</project.reporting.outputEncoding>
         <google-s2.version>2.0.0</google-s2.version>
-        <hutool.version>5.7.16</hutool.version>
+        <hutool.version>5.7.17</hutool.version>
         <lucene-core.version>4.0.0</lucene-core.version>
         <lombok.version>1.18.22</lombok.version>
-        <spring-boot.version>2.4.12</spring-boot.version>
+        <spring-boot.version>2.4.13</spring-boot.version>
         <junit.version>5.8.1</junit.version>
         <skipTests>true</skipTests>
     </properties>
@@ -91,7 +91,13 @@
 
             <dependency>
                 <groupId>cn.hutool</groupId>
-                <artifactId>hutool-all</artifactId>
+                <artifactId>hutool-core</artifactId>
+                <version>${hutool.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>cn.hutool</groupId>
+                <artifactId>hutool-json</artifactId>
                 <version>${hutool.version}</version>
             </dependency>
 
