@@ -7,7 +7,7 @@
     <groupId>com.ling5821</groupId>
     <artifactId>jetgeo</artifactId>
     <packaging>pom</packaging>
-    <version>1.2.1</version>
+    <version>1.2.2-SNAPSHOT</version>
     <modules>
         <module>jetgeo-core</module>
         <module>jetgeo-spring-boot-starter</module>
@@ -67,6 +67,11 @@
 <!--            <name>Central Repository OSSRH</name>-->
 <!--            <url>https://oss.sonatype.org/content/repositories/snapshots</url>-->
 <!--        </snapshotRepository>-->
+        <snapshotRepository>
+            <id>central</id>
+            <name>Central Repository</name>
+            <url>https://central.sonatype.com/repository/maven-snapshots/</url>
+        </snapshotRepository>
     </distributionManagement>
 
     <dependencyManagement>
