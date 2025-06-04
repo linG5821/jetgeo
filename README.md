@@ -30,7 +30,7 @@
    ```xml
    <dependency>
        <groupId>com.ling5821</groupId>
-       <artifactId>jetgeo</artifactId>
+       <artifactId>jetgeo-core</artifactId>
        <version>${jetgeo.version}</version>
    </dependency>
    ```
