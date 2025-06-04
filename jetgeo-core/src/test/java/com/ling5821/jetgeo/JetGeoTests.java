@@ -28,7 +28,7 @@ public class JetGeoTests {
 
     static {
         JetGeoProperties properties = new JetGeoProperties();
-        properties.setGeoDataParentPath("/data/geodata");
+        properties.setGeoDataParentPath("D:\\Projects\\idea\\jetgeo\\data\\geodata");
         properties.setLevel(LevelEnum.province);
         properties.setLevel(LevelEnum.city);
         properties.setLevel(LevelEnum.district);
